@@ -11,20 +11,19 @@ export default function Nav() {
   const navLinks = (
     <>
       <p>
-        <Image src={search} alt="nav img" w={100} h={100} />
+        <Image src={search} alt="nav img"  />
       </p>
       <p>
-        <Image src={create} alt="nav img" w={200} h={200} />
-      </p>
-
-      <p>
-        <Image src={message} alt="nav img" w={100} h={100} />
+        <Image src={create} alt="nav img"  />
       </p>
       <p>
-        <Image src={notification} alt="nav img" w={100} h={100} />
+        <Image src={message} alt="nav img"  />
       </p>
       <p>
-        <Image src={option} alt="nav img" w={100} h={100} />
+        <Image src={notification} alt="nav img"  />
+      </p>
+      <p>
+        <Image src={option} alt="nav img"  />
       </p>
     </>
   );
@@ -32,14 +31,14 @@ export default function Nav() {
   return (
     <div className="navbar container mx-auto px-4 md:px-16 text-white">
       <div className="navbar-start">
-        <Image src={logo} alt="logo img" w={100} h={100} />
+      <Image src={logo} alt="logo img"  />
       </div>
 
       <div className="navbar-end">
         <div className="hidden lg:flex">
           <div className="menu menu-horizontal px-4 gap-2">{navLinks}</div>
         </div>
-        <Image src={profile} alt="profile img" w={100} h={100} />
+        <Image src={profile} alt="profile img" />
 
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

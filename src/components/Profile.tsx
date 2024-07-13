@@ -13,6 +13,7 @@ import v2 from "@/assets/video/Video (1).png";
 import v3 from "@/assets/video/Video (2).png";
 import v4 from "@/assets/video/Video (3).png";
 import v5 from "@/assets/video/Rectangle 5 (4).png";
+import Blog from "./Blog";
 
 export default function Profile() {
   return (
@@ -35,15 +36,13 @@ export default function Profile() {
               <Image
                 src={profile}
                 alt="profile"
-                w={100}
-                h={100}
+                
                 className="hidden md:block"
               />
               <Image
                 src={profileS}
                 alt="profile"
-                w={100}
-                h={100}
+                
                 className="block md:hidden"
               />
             </div>
@@ -87,10 +86,10 @@ export default function Profile() {
 
             {/* for :sm */}
             <div className="grid grid-cols-2 xl:flex xl:flex-wrap">
-              <Image src={p2} alt="photo" w={100} h={100} />
-              <Image src={p1} alt="photo" w={100} h={100} />
-              <Image src={p4} alt="photo" w={100} h={100} />
-              <Image src={p3} alt="photo" w={100} h={100} />
+              <Image src={p2} alt="photo"  />
+              <Image src={p1} alt="photo"  />
+              <Image src={p4} alt="photo"  />
+              <Image src={p3} alt="photo"  />
             </div>
 
             {/* for :md */}
@@ -107,15 +106,15 @@ export default function Profile() {
           {/* video */}
           <div>
             <p className="text-lg md:text-2xl mb-3 font-bold pl-2 md:pl-0">Videos</p>
-            <Image src={v5} alt="video" w={100} h={100} className="hidden md:block" />
+            <Image src={v5} alt="video"  className="hidden md:block" />
             <div className="md:hidden p-2">
             <div className="mb-4">
-              <Image src={v1} alt="video" w={100} h={100} />
+              <Image src={v1} alt="video"  />
             </div>
             <div className="flex justify-between">
-              <Image src={v2} alt="video" w={100} h={100} />
-              <Image src={v3} alt="video" w={100} h={100} />
-              <Image src={v4} alt="video" w={100} h={100} />
+              <Image src={v2} alt="video"  />
+              <Image src={v3} alt="video"  />
+              <Image src={v4} alt="video" />
             </div>
             <p className="text-[#196AA0] float-end mt-4">More+</p>
             </div>
@@ -126,9 +125,8 @@ export default function Profile() {
         
         
         {/* blogs */}
-        <div className="w-full md:w-3/5 p-10">
-          <div>blog 1</div>
-          <div>blog 2</div>
+        <div className="w-full md:w-3/5 p-10 pb-0">
+          <Blog />
         </div>
       </div>
     </div>
