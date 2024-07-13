@@ -2,6 +2,8 @@
 
 This project is built with Next.js. Follow the steps below to set up and run the project locally.
 
+## Live URL: <https://john-doe-portfolio-liart.vercel.app>
+
 ## Getting Started
 
 1. **Clone the repository:**
