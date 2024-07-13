@@ -78,31 +78,30 @@ export default function Profile() {
       {/* blog, photo and content */}
       <div className="container mx-auto bg-base-200 flex flex-col md:flex-row-reverse">
         {/* photo & video */}
-        {/* <div className="w-full md:w-2/5">
-
-        </div> */}
-        <div className="w-full md:w-2/5 p-4 md:p-10 pb-0 md:pb-0 grid grid-cols-2 md:grid-cols-1 gap-4">
+        
+        <div className="w-full md:w-2/5 p-4 md:p-10 pb-0 md:py-0 grid grid-cols-2 md:grid-cols-1 gap-4
+        -mt-10 md:-mt-24 z-30">
           {/* photo */}
           <div>
             <p className="text-lg md:text-2xl mb-3 font-bold">Photos</p>
 
             {/* for :sm */}
-            <div className="grid grid-cols-2 md:hidden justify-center">
+            <div className="grid grid-cols-2 xl:flex xl:flex-wrap">
               <Image src={p2} alt="photo" w={100} h={100} />
-              <Image src={p1} alt="photo" w={100} h={100} />{" "}
-              <Image src={p4} alt="photo" w={100} h={100} />{" "}
+              <Image src={p1} alt="photo" w={100} h={100} />
+              <Image src={p4} alt="photo" w={100} h={100} />
               <Image src={p3} alt="photo" w={100} h={100} />
             </div>
 
             {/* for :md */}
-            <div className="md:flex hidden">
+            {/* <div className="md:flex hidden">
               <Image src={p2} alt="photo" w={100} h={100} />
               <Image src={p1} alt="photo" w={100} h={100} />{" "}
             </div>
             <div className="md:flex hidden">
               <Image src={p4} alt="photo" w={100} h={100} />{" "}
-              <Image src={p3} alt="photo" w={100} h={100} />
-            </div>
+              <Image src={p3} alt="photo" w={100} h={100} /> */}
+            {/* </div> */}
             <p className="float-end text-[#196AA0] xl:pr-8">More+</p>
           </div>
           {/* video */}
@@ -124,6 +123,8 @@ export default function Profile() {
             
           </div>
         </div>
+        
+        
         {/* blogs */}
         <div className="w-full md:w-3/5 p-10">
           <div>blog 1</div>
