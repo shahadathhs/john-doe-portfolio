@@ -1,8 +1,12 @@
+import Nav from "@/components/Nav"
+
 export default function Home() {
   return (
-    <main>
-      <h2 className="text-center text-4xl">Hello World</h2>
-      <button className="btn btn-outline">Daisy Button</button>
+    <main  className="font-lexend">
+      <div className="bg-black">
+      <Nav />
+      </div>
+      
     </main>
   );
 }
