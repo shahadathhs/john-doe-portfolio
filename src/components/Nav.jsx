@@ -11,35 +11,35 @@ export default function Nav() {
   const navLinks = (
     <>
       <p>
-        <Image src={search} alt="logo img" w={100} h={100}></Image>
+        <Image src={search} alt="nav img" w={100} h={100} />
       </p>
       <p>
-        <Image src={create} alt="logo img" w={200} h={200}></Image>
+        <Image src={create} alt="nav img" w={200} h={200} />
       </p>
 
       <p>
-        <Image src={message} alt="logo img" w={100} h={100}></Image>
+        <Image src={message} alt="nav img" w={100} h={100} />
       </p>
       <p>
-        <Image src={notification} alt="logo img" w={100} h={100}></Image>
+        <Image src={notification} alt="nav img" w={100} h={100} />
       </p>
       <p>
-        <Image src={option} alt="logo img" w={100} h={100}></Image>
+        <Image src={option} alt="nav img" w={100} h={100} />
       </p>
     </>
   );
 
   return (
-    <div className="navbar container mx-auto px-4 md:px-8 text-white">
+    <div className="navbar container mx-auto px-4 md:px-16 text-white">
       <div className="navbar-start">
-        <Image src={logo} alt="logo img" w={100} h={100}></Image>
+        <Image src={logo} alt="logo img" w={100} h={100} />
       </div>
 
       <div className="navbar-end">
         <div className="hidden lg:flex">
           <div className="menu menu-horizontal px-4 gap-2">{navLinks}</div>
         </div>
-        <Image src={profile} alt="logo img" w={100} h={100}></Image>
+        <Image src={profile} alt="profile img" w={100} h={100} />
 
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
