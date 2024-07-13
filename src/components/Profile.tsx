@@ -36,13 +36,13 @@ export default function Profile() {
               <Image
                 src={profile}
                 alt="profile"
-                
+
                 className="hidden md:block"
               />
               <Image
                 src={profileS}
                 alt="profile"
-                
+
                 className="block md:hidden"
               />
             </div>
@@ -77,53 +77,44 @@ export default function Profile() {
       {/* blog, photo and content */}
       <div className="container mx-auto bg-base-200 flex flex-col md:flex-row-reverse">
         {/* photo & video */}
-        
-        <div className="w-full md:w-2/5 p-4 md:p-10 pb-0 md:py-0 grid grid-cols-2 md:grid-cols-1 gap-4
-        -mt-10 md:-mt-24 z-30">
+
+        <div className="w-full md:w-2/5 p-4 md:p-10 pb-0 lg:py-0 grid grid-cols-2 md:flex md:flex-col gap-4
+        lg:-mt-10 xl:-mt-24 z-30">
           {/* photo */}
           <div>
             <p className="text-lg md:text-2xl mb-3 font-bold">Photos</p>
-
-            {/* for :sm */}
-            <div className="grid grid-cols-2 xl:flex xl:flex-wrap">
-              <Image src={p2} alt="photo"  />
-              <Image src={p1} alt="photo"  />
-              <Image src={p4} alt="photo"  />
-              <Image src={p3} alt="photo"  />
+            <div className="grid grid-cols-2 gap-0">
+              <div className="relative w-full h-0 pb-[100%]">
+                <Image src={p2} alt="photo" layout="fill" objectFit="cover" />
+              </div>
+              <div className="relative w-full h-0 pb-[100%]">
+                <Image src={p1} alt="photo" layout="fill" objectFit="cover" />
+              </div>
+              <div className="relative w-full h-0 pb-[100%]">
+                <Image src={p4} alt="photo" layout="fill" objectFit="cover" />
+              </div>
+              <div className="relative w-full h-0 pb-[100%]">
+                <Image src={p3} alt="photo" layout="fill" objectFit="cover" />
+              </div>
             </div>
-
-            {/* for :md */}
-            {/* <div className="md:flex hidden">
-              <Image src={p2} alt="photo" w={100} h={100} />
-              <Image src={p1} alt="photo" w={100} h={100} />{" "}
-            </div>
-            <div className="md:flex hidden">
-              <Image src={p4} alt="photo" w={100} h={100} />{" "}
-              <Image src={p3} alt="photo" w={100} h={100} /> */}
-            {/* </div> */}
             <p className="float-end text-[#196AA0] xl:pr-8">More+</p>
           </div>
           {/* video */}
           <div>
             <p className="text-lg md:text-2xl mb-3 font-bold pl-2 md:pl-0">Videos</p>
-            <Image src={v5} alt="video"  className="hidden md:block" />
-            <div className="md:hidden p-2">
-            <div className="mb-4">
-              <Image src={v1} alt="video"  />
+            <div className="p-2">
+              <div className="mb-4">
+                <Image src={v1} alt="video" layout="responsive" width={100} height={100} />
+              </div>
+              <div className="flex justify-between gap-2">
+                <Image src={v2} alt="video" width={100} height={100} />
+                <Image src={v2} alt="video" width={100} height={100} />
+                <Image src={v2} alt="video" width={100} height={100} />
+              </div>
+              <p className="text-[#196AA0] float-end mt-4">More+</p>
             </div>
-            <div className="flex justify-between">
-              <Image src={v2} alt="video"  />
-              <Image src={v3} alt="video"  />
-              <Image src={v4} alt="video" />
-            </div>
-            <p className="text-[#196AA0] float-end mt-4">More+</p>
-            </div>
-            
-            
           </div>
         </div>
-        
-        
         {/* blogs */}
         <div className="w-full md:w-3/5 p-10 pb-0">
           <Blog />
