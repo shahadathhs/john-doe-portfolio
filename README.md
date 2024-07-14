@@ -2,7 +2,15 @@
 
 This project is built with Next.js. Follow the steps below to set up and run the project locally.
 
+## Technology Used:
+- Tailwind CSS
+- Next.js
+- TypeScript
+- Daisy UI
+
 ## Live URL: <https://john-doe-portfolio-liart.vercel.app>
+
+## Video Presentation: [Google Drive](https://drive.google.com/file/d/1YAOhog5nOeJQVTmjvQXy6ywZiUAxHzsd/view?usp=drive_link)
 
 ## Getting Started
 
